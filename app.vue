@@ -1,7 +1,10 @@
 <template>
-  <div class="py-20">
-      lol
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+    <NuxtLayout>
+        <main>
+            <NuxtPage/>
+        </main>
+    </NuxtLayout>
 </template>
+
+<script setup lang="ts">
+</script>
