@@ -1,3 +1,3 @@
 <template>
-    <div>Index hk</div>
+    <div>Index hkl</div>
 </template>
