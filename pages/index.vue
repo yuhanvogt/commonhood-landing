@@ -1,3 +1,5 @@
 <template>
-    <div>Index hk</div>
+    <AppContainer>
+        CONNECT
+    </AppContainer>
 </template>
