@@ -12,6 +12,12 @@ export default defineNuxtConfig({
         }
     },
 
+    router: {
+        options: {
+            scrollBehaviorType: 'smooth'
+        }
+    },
+
     css: ['@/assets/styles/main.scss'],
 
     modules: [
