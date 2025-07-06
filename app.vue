@@ -1,5 +1,7 @@
 <template>
     <NuxtLayout>
+        <Hero />
+
         <header class="sticky top-0 bg-white border-b-2 border-gray-100">
             <AppContainer class="h-24 flex justify-between items-center">
                 <Bars3Icon @click="toggleMobileMenu" class="size-10 md:hidden" />
