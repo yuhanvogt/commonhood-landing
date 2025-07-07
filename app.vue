@@ -47,19 +47,19 @@
                 <nav class="hidden md:block">
                     <ul class="flex items-center gap-6">
                         <li>
-                            <NuxtLink :to="{ name: 'index', hash: '#about' }" class="uppercase py-3 text-3xl border-black hover:border-b-2">
+                            <NuxtLink :to="{ name: 'index', hash: '#about' }" class="uppercase py-1 text-3xl border-black hover:border-b-2">
                                 About
                             </NuxtLink>
                         </li>
 
                         <li>
-                            <NuxtLink :to="{ name: 'index', hash: '#features' }" class="uppercase py-3 text-3xl border-black hover:border-b-2">
+                            <NuxtLink :to="{ name: 'index', hash: '#features' }" class="uppercase py-1 text-3xl border-black hover:border-b-2">
                                 Features
                             </NuxtLink>
                         </li>
 
                         <li>
-                            <NuxtLink :to="{ name: 'index', hash: '#connect' }" class="uppercase py-3 text-3xl border-black hover:border-b-2">
+                            <NuxtLink :to="{ name: 'index', hash: '#connect' }" class="uppercase py-1 text-3xl border-black hover:border-b-2">
                                 Connect
                             </NuxtLink>
                         </li>
