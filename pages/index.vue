@@ -140,4 +140,26 @@ import ContributeFeatureImage from 'assets/images/features-contribute.webp'
 import BrowseFeatureImage from 'assets/images/features-browse.webp'
 import DiscoverFeatureImage from 'assets/images/features-discover.webp'
 import LearnFeatureImage from 'assets/images/features-learn.webp'
+import OGImage from 'assets/images/og-image.png'
+
+definePageMeta({
+    title: 'Commonhood'
+})
+
+useHead({
+    meta: [
+        {
+            property: 'og:title',
+            content: 'About Commonhood'
+        },
+        {
+            property: 'og:description',
+            content: "Commonhood is a digital platform for collective care and mutual provisioning—built not to scale markets, but to support commons. Designed with slowness, trust, and reciprocity in mind, it helps communities connect through what they need and what they can offer."
+        },
+        {
+            property: 'og:image',
+            content: OGImage
+        }
+    ]
+})
 </script>

@@ -12,7 +12,7 @@
                             <div class="h-24 flex justify-between items-center">
                                 <XMarkIcon @click="toggleMobileMenu" class="size-10 md:hidden" />
 
-                                <NuxtLink to="https://google.com" external target="_blank" class="h-12 px-6 pt-1 bg-black text-white rounded-full flex items-center gap-4" >
+                                <NuxtLink to="https://app.commonhood.cc" external target="_blank" class="h-12 px-6 pt-1 bg-black text-white rounded-full flex items-center gap-4" >
                                     <span class="uppercase text-2xl leading-4">launch v1.0</span>
 
                                     <ArrowUpRightIcon class="size-6 mb-1" />
@@ -66,7 +66,7 @@
                     </ul>
                 </nav>
 
-                <NuxtLink to="https://google.com" external target="_blank" class="h-12 px-6 pt-1 bg-black text-white rounded-full flex items-center gap-4" >
+                <NuxtLink to="https://app.commonhood.cc" external target="_blank" class="h-12 px-6 pt-1 bg-black text-white rounded-full flex items-center gap-4" >
                     <span class="uppercase text-2xl leading-4">launch v1.0</span>
 
                     <ArrowUpRightIcon class="size-6 mb-1" />
@@ -81,7 +81,21 @@
         <footer class="pt-16 pb-6 lg:pt-32">
             <AppContainer>
                 <p class="md:max-w-[80%] lg:text-xl">
-                    Commonhood is an ongoing open-source project stemming for the masters thesis by Jonas Vogt, co-developed by Peter Aichner and Christoph Buettner, created at the Masters in Eco-Social Design of the Free University of Bozen-Bolzano. This website is set in Bastardo Grotesk by Giulia Boggio, and developed by Moein Mirkiani.
+                    Commonhood is an ongoing open-source project stemming for the masters thesis by
+                    <a href="https://jonasvogt.com" target="_blank">Jonas Vogt</a>
+                    , co-developed by
+                    <a href="https://www.bcommonslab.org" target="_blank">Peter Aichner</a>
+                    and
+                    <a href="https://www.monospace.design/en/" target="_blank">Christoph Buettner</a>
+                    , created at the
+                    <a href="https://designdisaster.unibz.it" target="_blank">Masters in Eco-Social Design</a>
+                    of the
+                    <a href="https://www.unibz.it/en/faculties/design-art/" target="_blank">Free University of Bozen-Bolzano</a>
+                    . This website is set in Bastardo Grotesk by
+                    <a href="https://www.giuliaboggio.xyz" target="_blank">Giulia Boggio</a>
+                    , and developed by
+                    <a href="https://www.linkedin.com/in/moeinmirkiani/" target="_blank">Moein Mirkiani</a>
+                    .
                 </p>
             </AppContainer>
         </footer>

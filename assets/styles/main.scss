@@ -3,3 +3,9 @@
 main {
   @apply bg-gray-100 min-h-screen;
 }
+
+footer {
+  a {
+    @apply border-b border-black;
+  }
+}
