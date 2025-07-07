@@ -23,9 +23,12 @@ import HeroImage from 'assets/images/hero.webp'
 
 const swiperRef = ref(null)
 const swiperItems: string[] = [
-    'relational 1 infrastructure',
-    'relational 2 infrastructure',
-    'relational 3 infrastructure'
+    'relational infrastructure',
+    'future in practice',
+    'tech for togetherness',
+    'shared abundance',
+    'post-market logic',
+    'radical care'
 ]
 
 const swiper = useSwiper(swiperRef, {
