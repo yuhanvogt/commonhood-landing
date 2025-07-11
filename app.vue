@@ -1,81 +1,63 @@
 <template>
     <NuxtLayout>
-        <Hero />
+        <header class="sticky top-0 z-20 bg-white border-b-2 border-gray-100">
+            <AppContainer class="h-16 flex justify-between items-center">
+                <NuxtLink to="/">
+                    <Logo filled class="h-7" />
+                </NuxtLink>
 
-        <header class="sticky top-0 bg-white border-b-2 border-gray-100">
-            <AppContainer class="h-24 flex justify-between items-center">
-                <Bars3Icon @click="toggleMobileMenu" class="size-10 md:hidden" />
+                <Bars3Icon @click="toggleMobileMenu" class="size-8 lg:hidden" />
 
                 <Transition mode="out-in">
                     <div v-show="mobileMenuOpen" class="w-full bg-gray-300 absolute top-0 left-0">
                         <AppContainer>
-                            <div class="h-24 flex justify-between items-center">
-                                <XMarkIcon @click="toggleMobileMenu" class="size-10 md:hidden" />
-
-                                <NuxtLink to="https://app.commonhood.cc" external target="_blank" class="h-12 px-6 pt-1 bg-black text-white rounded-full flex items-center gap-4" >
-                                    <span class="uppercase text-2xl leading-4">launch v1.0</span>
-
-                                    <ArrowUpRightIcon class="size-6 mb-1" />
+                            <div class="h-16 flex justify-between items-center">
+                                <NuxtLink to="/">
+                                    <Logo filled class="h-7" />
                                 </NuxtLink>
+
+                                <XMarkIcon @click="toggleMobileMenu" class="size-8 lg:hidden" />
                             </div>
 
-                            <nav class="py-6">
-                                <ul class="space-y-6">
-                                    <li>
-                                        <NuxtLink :to="{ name: 'index', hash: '#about' }" @click="toggleMobileMenu" class="uppercase py-3 text-3xl">
-                                            About
-                                        </NuxtLink>
-                                    </li>
-
-                                    <li>
-                                        <NuxtLink :to="{ name: 'index', hash: '#features' }" @click="toggleMobileMenu" class="uppercase py-3 text-3xl">
-                                            Features
-                                        </NuxtLink>
-                                    </li>
-
-                                    <li>
-                                        <NuxtLink :to="{ name: 'index', hash: '#connect' }" @click="toggleMobileMenu" class="uppercase py-3 text-3xl">
-                                            Connect
+                            <nav class="py-4 flex flex-col items-start">
+                                <ul class="mb-3 space-y-3">
+                                    <li v-for="item in navItems" :key="item.name">
+                                        <NuxtLink :to="item.to" @click="toggleMobileMenu" class="uppercase py-1 text-lg border-black hover:border-b-2">
+                                            {{ item.name }}
                                         </NuxtLink>
                                     </li>
                                 </ul>
+
+                                <NuxtLink to="https://app.commonhood.cc" external target="_blank" class="h-9 px-4 pt-1 bg-black text-white rounded-full flex items-center gap-2" >
+                                    <span class="uppercase text-lg leading-4">launch v1.0</span>
+                                    <ArrowUpRightIcon class="size-5 mb-1" />
+                                </NuxtLink>
                             </nav>
                         </AppContainer>
                     </div>
                 </Transition>
 
-                <nav class="hidden md:block">
+                <nav class="hidden lg:flex items-center gap-6">
                     <ul class="flex items-center gap-6">
-                        <li>
-                            <NuxtLink :to="{ name: 'index', hash: '#about' }" class="uppercase py-1 text-3xl border-black hover:border-b-2">
-                                About
-                            </NuxtLink>
-                        </li>
-
-                        <li>
-                            <NuxtLink :to="{ name: 'index', hash: '#features' }" class="uppercase py-1 text-3xl border-black hover:border-b-2">
-                                Features
-                            </NuxtLink>
-                        </li>
-
-                        <li>
-                            <NuxtLink :to="{ name: 'index', hash: '#connect' }" class="uppercase py-1 text-3xl border-black hover:border-b-2">
-                                Connect
+                        <li v-for="item in navItems" :key="item.name">
+                            <NuxtLink :to="item.to" class="uppercase py-1 text-lg border-black hover:border-b-2">
+                                {{ item.name }}
                             </NuxtLink>
                         </li>
                     </ul>
+
+                    <NuxtLink to="https://app.commonhood.cc" external target="_blank" class="h-9 px-4 pt-1 bg-black text-white rounded-full flex items-center gap-2" >
+                        <span class="uppercase text-lg leading-4">launch v1.0</span>
+                        <ArrowUpRightIcon class="size-5 mb-1" />
+                    </NuxtLink>
                 </nav>
 
-                <NuxtLink to="https://app.commonhood.cc" external target="_blank" class="h-12 px-6 pt-1 bg-black text-white rounded-full flex items-center gap-4" >
-                    <span class="uppercase text-2xl leading-4">launch v1.0</span>
 
-                    <ArrowUpRightIcon class="size-6 mb-1" />
-                </NuxtLink>
             </AppContainer>
         </header>
 
         <main>
-            <NuxtPage/>
+            <NuxtPage />
         </main>
 
         <footer class="pt-16 pb-6 lg:pt-32">
@@ -103,7 +85,14 @@
 </template>
 
 <script setup lang="ts">
+import Logo from '@/assets/icons/commonhood-logo.svg?component'
 import { ArrowUpRightIcon, Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline"
+
+const navItems: { name: string, to: string }[] = [
+    { name: 'About', to: '/' },
+    { name: 'Changelog', to: '/changelog' },
+    { name: 'Colophon', to: '/colophon' }
+]
 
 const mobileMenuOpen = ref<boolean>(false)
 

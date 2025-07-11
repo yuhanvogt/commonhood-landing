@@ -14,6 +14,7 @@
         "@heroicons/vue": "^2.2.0",
         "@nuxtjs/tailwindcss": "^6.14.0",
         "nuxt": "^3.17.6",
+        "nuxt-svgo": "4.2.3",
         "nuxt-swiper": "2.0.1",
         "vue": "^3.5.17",
         "vue-router": "^4.5.1"

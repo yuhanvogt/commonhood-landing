@@ -1,5 +1,7 @@
 <template>
-    <section id="about" class="py-6 scroll-mt-24 lg:py-10">
+    <Hero />
+
+    <section class="bg-gray-100 py-6 scroll-mt-24 lg:py-10">
         <AppContainer class="space-y-6 lg:space-y-10">
             <p class="text-2xl lg:text-5xl">
                 Commonhood is a prototype digital platform developed through research in design, political economy, and technology. It supports groups in organising shared provisioning without relying on markets, money, or extractive platform logics.
@@ -17,7 +19,7 @@
         </AppContainer>
     </section>
 
-    <section class="py-6 lg:py-10">
+    <section class="bg-gray-100 py-6 lg:py-10">
         <AppContainer class="space-y-6 lg:space-y-10">
             <h2 class="text-2xl lg:text-5xl">
                 How does it work?
@@ -37,7 +39,7 @@
         </AppContainer>
     </section>
 
-    <section id="features" class="py-10 scroll-mt-24 lg:py-20">
+    <section class="bg-gray-100 py-10 scroll-mt-24 lg:py-20">
         <AppContainer class="grid grid-cols-12 gap-y-6 gap-x-0 md:gap-x-10">
             <div class="col-span-12 md:col-span-6 lg:col-span-8">
                 <img :src="ContributeFeatureImage" alt="Commonhood Features - Contribute" class="w-full">
@@ -99,7 +101,7 @@
         </AppContainer>
     </section>
 
-    <section class="py-6 lg:py-10">
+    <section class="bg-gray-100 py-6 lg:py-10">
         <AppContainer class="space-y-6 lg:space-y-10">
             <p class="text-2xl lg:text-5xl">
                 Commonhood is not just another platform. It is built to resist extractive defaults and support collective autonomy. Here’s how it stands apart:
@@ -119,20 +121,7 @@
         </AppContainer>
     </section>
 
-    <section id="connect" class="py-10 scroll-mt-24 bg-white lg:py-20">
-        <AppContainer>
-            <h3 class="mb-6 uppercase text-5xl  md:text-7xl lg:mb-10 lg:text-8xl">
-                <span>Let’s begin a</span>
-                <br />
-                <span>conversation</span>
-            </h3>
-
-            <p class="indent-6 text-2xl lg:indent-20 lg:text-5xl">
-                Commonhood is currently inviting collectives, cooperatives, and community groups to explore setting up a constellation. If you’re interested in using Commonhood as an infrastructure for your shared practice,
-                <a href="mailto:hello@jonasvogt.com" class="border-b-[3px] border-black">let’s talk.</a>
-            </p>
-        </AppContainer>
-    </section>
+    <Coversation />
 </template>
 
 <script setup lang="ts">
@@ -142,6 +131,7 @@ import BrowseFeatureImage from 'assets/images/features-browse.webp'
 import DiscoverFeatureImage from 'assets/images/features-discover.webp'
 import LearnFeatureImage from 'assets/images/features-learn.webp'
 import OGImage from 'assets/images/og-image.png'
+import Coversation from "~/components/Coversation.vue";
 
 definePageMeta({
     title: 'Commonhood'
