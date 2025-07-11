@@ -3,3 +3,13 @@
         <slot />
     </div>
 </template>
+
+<script setup lang="ts">
+interface Props {
+    maxWidth?: string
+}
+
+const props = withDefaults(defineProps<Props>(), {
+    maxWidth: 'max-w-full'
+})
+</script>
