@@ -1,14 +1,14 @@
 <template>
     <section class="max-w-[1536px] mx-auto relative h-[400px] sm:h-[480px] md:h-[560px] lg:h-[680px] xl:h-[960px]">
-        <img :src="HeroImage" alt="Commonhood" class="w-full h-full object-cover" />
+        <img :src="HeroImage" alt="Commonhood" class="w-full h-full object-cover 2xl:object-contain 2xl:object-top" />
 
         <ClientOnly>
-            <div class="max-w-[240px] mx-auto text-center absolute top-[136px] left-1/2 transform -translate-x-1/2 sm:max-w-[320px] sm:top-[156px] md:max-w-[400px] md:top-[188px] lg:max-w-[500px] lg:top-[212px] xl:max-w-[600px] xl:top-[308px] 2xl:max-w-[760px] 2xl:top-[280px]">
-                <h1 class="uppercase text-gray-500 text-2xl leading-6 sm:text-4xl sm:leading-8 md:text-[42px] md:leading-9 lg:text-[52px] lg:leading-[48px] xl:text-[68px] xl:leading-[60px] 2xl:text-[84px] 2xl:leading-[72px]">Commonhood is</h1>
+            <div class="max-w-[280px] mx-auto text-center absolute top-[100px] left-1/2 transform -translate-x-1/2 sm:max-w-[320px] sm:top-[124px] md:max-w-[440px] md:top-[140px] lg:max-w-[500px] lg:top-[172px] xl:max-w-[640px] xl:top-[240px] 2xl:max-w-[680px] 2xl:top-[240px]">
+                <h1 class="uppercase text-gray-500 text-3xl leading-7 sm:text-4xl sm:leading-8 md:text-[44px] md:leading-10 lg:text-[52px] lg:leading-[48px] xl:text-7xl xl:leading-[64px] 2xl:text-[66px] 2xl:leading-[56px]">Commonhood is</h1>
 
                 <swiper-container ref="swiperRef" :init="false">
                     <swiper-slide v-for="(item, index) in swiperItems" :key="index">
-                        <h3 class="uppercase text-2xl leading-6 sm:text-4xl sm:leading-8 md:text-[42px] md:leading-9 lg:text-[52px] lg:leading-[48px] xl:text-[68px] xl:leading-[60px] 2xl:text-[84px] 2xl:leading-[72px]">{{ item }}</h3>
+                        <h3 class="uppercase text-3xl leading-7 sm:text-4xl sm:leading-8 md:text-[44px] md:leading-10 lg:text-[52px] lg:leading-[48px] xl:text-7xl xl:leading-[64px] 2xl:text-[66px] 2xl:leading-[56px]">{{ item }}</h3>
                     </swiper-slide>
                 </swiper-container>
             </div>
@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import HeroImage from 'assets/images/hero.webp'
+import HeroImage from 'assets/images/hero.png'
 
 const swiperRef = ref(null)
 const swiperItems: string[] = [
