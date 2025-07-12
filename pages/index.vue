@@ -121,7 +121,11 @@
         </AppContainer>
     </section>
 
-    <Coversation />
+    <section>
+        <AppContainer>
+            <Coversation />
+        </AppContainer>
+    </section>
 </template>
 
 <script setup lang="ts">

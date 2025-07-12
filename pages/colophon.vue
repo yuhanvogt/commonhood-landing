@@ -192,7 +192,11 @@
         </AppContainer>
     </section>
 
-    <Coversation />
+    <section>
+        <AppContainer class="lg:max-w-[1000px]">
+            <Coversation />
+        </AppContainer>
+    </section>
 </template>
 
 <script setup lang="ts">
