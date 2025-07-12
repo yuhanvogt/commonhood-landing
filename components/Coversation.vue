@@ -1,7 +1,7 @@
 <template>
     <section class="py-10 scroll-mt-24 bg-white lg:py-20">
         <AppContainer>
-            <h3 class="mb-6 uppercase text-5xl  md:text-7xl lg:mb-10 lg:text-8xl">
+            <h3 class="mb-6 uppercase text-4xl sm:text-5xl md:text-7xl lg:mb-10 lg:text-8xl">
                 <span>Let’s begin a</span>
                 <br />
                 <span>conversation</span>

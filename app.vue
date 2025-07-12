@@ -12,7 +12,7 @@
                     <div v-show="mobileMenuOpen" class="w-full bg-gray-300 absolute top-0 left-0">
                         <AppContainer>
                             <div class="h-16 flex justify-between items-center">
-                                <NuxtLink to="/">
+                                <NuxtLink to="/" @click="toggleMobileMenu">
                                     <Logo filled class="h-7" />
                                 </NuxtLink>
 

@@ -78,8 +78,10 @@
             @apply list-disc pl-6;
 
             li {
+                @apply md:text-xl;
+
                 &::marker {
-                    @apply text-blue-500 text-xl;
+                    @apply text-blue-500;
                 }
 
                 a {
