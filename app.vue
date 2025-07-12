@@ -40,7 +40,7 @@
                 <nav class="hidden lg:flex items-center gap-6">
                     <ul class="flex items-center gap-6">
                         <li v-for="item in navItems" :key="item.name">
-                            <NuxtLink :to="item.to" class="uppercase py-1 text-lg border-black hover:border-b-2">
+                            <NuxtLink :to="item.to" class="uppercase py-1 text-lg border-black hover:border-b-2" active-class="border-b-2" exact>
                                 {{ item.name }}
                             </NuxtLink>
                         </li>
