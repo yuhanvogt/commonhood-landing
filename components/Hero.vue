@@ -1,18 +1,20 @@
 <template>
-    <section class="max-w-[1536px] mx-auto relative h-[400px] sm:h-[480px] md:h-[560px] lg:h-[680px] xl:h-[960px]">
-        <img :src="HeroImage" alt="Commonhood" class="w-full h-full object-cover 2xl:object-contain 2xl:object-top" />
+    <section class="bg-gray-100">
+        <div class="max-w-[1536px] mx-auto relative h-[400px] sm:h-[480px] md:h-[560px] lg:h-[680px] xl:h-[960px]">
+            <img :src="HeroImage" alt="Commonhood" class="w-full h-full object-cover 2xl:object-contain 2xl:object-top" />
 
-        <ClientOnly>
-            <div class="max-w-[280px] mx-auto text-center absolute top-[100px] left-1/2 transform -translate-x-1/2 sm:max-w-[320px] sm:top-[124px] md:max-w-[440px] md:top-[140px] lg:max-w-[500px] lg:top-[172px] xl:max-w-[640px] xl:top-[240px] 2xl:max-w-[680px] 2xl:top-[240px]">
-                <h1 class="uppercase text-gray-500 text-3xl leading-7 sm:text-4xl sm:leading-8 md:text-[44px] md:leading-10 lg:text-[52px] lg:leading-[48px] xl:text-7xl xl:leading-[64px] 2xl:text-[66px] 2xl:leading-[56px]">Commonhood is</h1>
+            <ClientOnly>
+                <div class="max-w-[280px] mx-auto text-center absolute top-[112px] left-1/2 transform -translate-x-1/2 sm:max-w-[320px] sm:top-[136px] md:max-w-[440px] md:top-[156px] lg:max-w-[500px] lg:top-[192px] xl:max-w-[640px] xl:top-[260px] 2xl:max-w-[680px] 2xl:top-[240px]">
+                    <h1 class="uppercase text-gray-500 text-3xl leading-7 sm:text-4xl sm:leading-8 md:text-[44px] md:leading-10 lg:text-[52px] lg:leading-[48px] xl:text-7xl xl:leading-[64px] 2xl:text-[70px] 2xl:leading-[60px]">Commonhood is</h1>
 
-                <swiper-container ref="swiperRef" :init="false">
-                    <swiper-slide v-for="(item, index) in swiperItems" :key="index">
-                        <h3 class="uppercase text-3xl leading-7 sm:text-4xl sm:leading-8 md:text-[44px] md:leading-10 lg:text-[52px] lg:leading-[48px] xl:text-7xl xl:leading-[64px] 2xl:text-[66px] 2xl:leading-[56px]">{{ item }}</h3>
-                    </swiper-slide>
-                </swiper-container>
-            </div>
-        </ClientOnly>
+                    <swiper-container ref="swiperRef" :init="false">
+                        <swiper-slide v-for="(item, index) in swiperItems" :key="index">
+                            <h3 class="uppercase text-3xl leading-7 sm:text-4xl sm:leading-8 md:text-[44px] md:leading-10 lg:text-[52px] lg:leading-[48px] xl:text-7xl xl:leading-[64px] 2xl:text-[70px] 2xl:leading-[60px]">{{ item }}</h3>
+                        </swiper-slide>
+                    </swiper-container>
+                </div>
+            </ClientOnly>
+        </div>
     </section>
 </template>
 

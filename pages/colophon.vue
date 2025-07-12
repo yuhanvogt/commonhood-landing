@@ -1,13 +1,13 @@
 <template>
     <section class="h-72 bg-violet-500 py-10 flex flex-col justify-end md:h-96">
-        <AppContainer class="lg:max-w-[1000px]">
+        <AppContainer >
             <h1 class="uppercase text-white text-5xl md:text-8xl">Colophon</h1>
             <p class="text-white md:text-xl">This page describes how the site is made, with what tools, supporting what technologies.</p>
         </AppContainer>
     </section>
 
     <section class="bg-gray-100 py-10">
-        <AppContainer class="space-y-10 lg:max-w-[1000px]">
+        <AppContainer class="space-y-10">
             <p class="text-xl">Commonhood is a web application designed and developed using a modern, open-source technology stack, with a focus on modularity, scalability, and user experience.</p>
 
             <div class="colophons">
@@ -193,7 +193,7 @@
     </section>
 
     <section>
-        <AppContainer class="lg:max-w-[1000px]">
+        <AppContainer>
             <Coversation />
         </AppContainer>
     </section>

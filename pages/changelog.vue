@@ -1,28 +1,25 @@
 <template>
     <section class="h-72 bg-blue-500 py-10 flex flex-col justify-end md:h-96">
-        <AppContainer class="lg:max-w-[1000px]">
+        <AppContainer>
             <h1 class="uppercase text-white text-5xl md:text-8xl">Changelog</h1>
             <p class="text-white md:text-xl">This page keeps track of updates, releases, bug-fixes and new content.</p>
         </AppContainer>
     </section>
 
     <section class="logs bg-gray-100 py-10">
-        <AppContainer class="space-y-10 lg:max-w-[1000px]">
+        <AppContainer class="space-y-10">
             <div class="log">
                 <h5>July 2025</h5>
                 <ul>
                     <li>
-                        <NuxtLink to="/" external target="_blank">
+                        <NuxtLink to="https://app.commonhood.cc" external target="_blank">
                             Commonhood v0.1.14
                         </NuxtLink>
                         has a changed and navigation and now links to an about page, a colophon, and this changelog
                     </li>
 
                     <li>
-                        <NuxtLink to="/" external target="_blank">
-                            My Contributions
-                        </NuxtLink>
-                        is now only accessible to signed in participants.
+                        My Contributions is now only accessible to signed in participants.
                     </li>
 
                     <li>In v0.1.14 offer and need cards are enhanced, they now display details (location, date range, virtual exchange) as tags.</li>
@@ -42,7 +39,7 @@
                 <ul>
                     <li>
                         Implemented participant authentication and session management using
-                        <NuxtLink to="/" external target="_blank">
+                        <NuxtLink to="https://clerk.com" external target="_blank">
                             Clerk
                         </NuxtLink>
                         , including protected routes, sign-in/sign-up pages, and middleware for route protection.</li>
@@ -62,7 +59,7 @@
     </section>
 
     <section>
-        <AppContainer class="lg:max-w-[1000px]">
+        <AppContainer>
             <Coversation />
         </AppContainer>
     </section>

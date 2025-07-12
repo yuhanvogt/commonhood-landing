@@ -50,7 +50,7 @@
                     Contribute offers and needs that reflect your capacities and situations
                 </p>
 
-                <span class="inline-block p-2 mb-2 leading-3 text-sm text-gray-500 border border-gray-500 rounded-full">Coming soon</span>
+                <span class="inline-block px-2 pt-2 pb-1.5 mb-2 leading-3 text-sm text-gray-500 border border-gray-500 rounded-full">Coming soon</span>
 
                 <p class="text-xl text-gray-500">
                     Collective offers and needs, surfaced when multiple participants overlap
@@ -76,7 +76,7 @@
                     Discover matches based on what you need or what you offer
                 </p>
 
-                <span class="inline-block p-2 mb-2 leading-3 text-sm text-gray-500 border border-gray-500 rounded-full">Coming soon</span>
+                <span class="inline-block px-2 pt-2 pb-1.5 mb-2 leading-3 text-sm text-gray-500 border border-gray-500 rounded-full">Coming soon</span>
 
                 <p class="text-xl text-gray-500">
                     Form connections across constellations and enable translocal reciprocity
@@ -92,7 +92,7 @@
                     Learn why a match might matter
                 </p>
 
-                <span class="inline-block p-2 mb-2 leading-3 text-sm text-gray-500 border border-gray-500 rounded-full">Coming soon</span>
+                <span class="inline-block px-2 pt-2 pb-1.5 mb-2 leading-3 text-sm text-gray-500 border border-gray-500 rounded-full">Coming soon</span>
 
                 <p class="text-xl text-gray-500">
                     Community storytelling to reflect on shared provisioning patterns
@@ -135,7 +135,6 @@ import BrowseFeatureImage from 'assets/images/features-browse.webp'
 import DiscoverFeatureImage from 'assets/images/features-discover.webp'
 import LearnFeatureImage from 'assets/images/features-learn.webp'
 import OGImage from 'assets/images/og-image.png'
-import Coversation from "~/components/Coversation.vue";
 
 definePageMeta({
     title: 'Commonhood'

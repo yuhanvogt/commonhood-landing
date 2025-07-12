@@ -1,6 +1,6 @@
 <template>
     <NuxtLayout>
-        <header class="sticky top-0 z-20 bg-white border-b-2 border-gray-100">
+        <header class="sticky top-0 z-20 bg-white">
             <AppContainer class="h-16 flex justify-between items-center">
                 <NuxtLink to="/">
                     <Logo filled class="h-7" />
