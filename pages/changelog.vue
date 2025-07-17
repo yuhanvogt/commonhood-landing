@@ -22,7 +22,7 @@
                         My Contributions is now only accessible to signed in participants.
                     </li>
 
-                    <li>In v0.1.14 offer and need cards are enhanced, they now display details (location, date range, virtual exchange) as tags.</li>
+                    <li>Offer and need cards are enhanced, they now display details (location, date range, virtual exchange) as tags.</li>
 
                     <li>There is now a corrected singular/plural logic for community, offer, and need counters.</li>
 
