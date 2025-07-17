@@ -21,12 +21,15 @@
                     <li>Entries in reasoning view now hide the author, description, and tags to reduce clutter.</li>
 
                     <li>The version badge now appears next to the logo in the header.</li>
+                    <br>
 
                     <li>v0.1.16 enhanced community name display in entries, and the visibility logic is now reflected in the create entries flow.</li>
+                    <br>
 
                     <li>v0.1.15 refactored the visibility logic and enhanced community ID management for better privacy control.</li>
 
                     <li>Scroll position is now remembered when exiting match view.</li>
+                    <br>
 
                     <li>v0.1.14 has a changed menu and now links to an about page, a colophon, and this changelog.</li>
 
