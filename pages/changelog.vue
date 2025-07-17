@@ -13,14 +13,24 @@
                 <ul>
                     <li>
                         <NuxtLink to="https://app.commonhood.cc" external target="_blank">
-                            Commonhood v0.1.14
+                            Commonhood v0.1.17
                         </NuxtLink>
-                        has a changed and navigation and now links to an about page, a colophon, and this changelog
+                        focused on improving legibility and readability of text by introducing dynamic font sizing for titles, a slider to customise grid columns in real time and a toggle for autosizing text. 
                     </li>
 
-                    <li>
-                        My Contributions is now only accessible to signed in participants.
-                    </li>
+                    <li>Entries in reasoning view now hide the author, description, and tags to reduce clutter.</li>
+
+                    <li>The version badge now appears next to the logo in the header.</li>
+
+                    <li>v0.1.16 enhanced community name display in entries, and the visibility logic is now reflected in the create entries flow.</li>
+
+                    <li>v0.1.15 refactored the visibility logic and enhanced community ID management for better privacy control.</li>
+
+                    <li>Scroll position is now remembered when exiting match view.</li>
+
+                    <li>v0.1.14 has a changed menu and now links to an about page, a colophon, and this changelog.</li>
+
+                    <li>My Contributions is now only accessible to signed in participants.</li>
 
                     <li>Offer and need cards are enhanced, they now display details (location, date range, virtual exchange) as tags.</li>
 
